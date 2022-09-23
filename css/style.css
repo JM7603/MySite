@@ -1,0 +1,169 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(#000000, #000000);
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  padding: 20px 0 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title span {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #fff;
+  font-size: 70px;
+}
+
+.MainTopBG {
+  background-image: url(../img/cool.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.boxMain {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 0 40px 0;
+}
+
+.box {
+  background: #fff;
+  width: 25%;
+  margin: 0;
+  border-radius: 20px;
+  height: 470px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+}
+
+.progress-container {
+  width: 100%;
+  height: 20px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0%;
+  background-image: linear-gradient(to top, #ff9800, #ff5721);
+}
+
+.box1 {
+  background: url(../img/001.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.box2 {
+  background: url(../img/002.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.box3 {
+  background: url(../img/003.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.box4 {
+  background: url(../img/004.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.box5 {
+  background: url(../img/005.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.box6 {
+  background: url(../img/006.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.box7 {
+  background: url(../img/007.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.box8 {
+  background: url(../img/008.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.box9 {
+  background: url(../img/009.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.box {
+  position: relative;
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+  cursor: pointer;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (max-width: 769px) {
+  .MainTopBG {
+    height: 70vh;
+  }
+
+  .title h1 {
+    font-size: 20px;
+  }
+
+  .boxMain {
+    display: block;
+  }
+
+  .box {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .boxMain .box {
+    margin-bottom: 40px;
+  }
+}

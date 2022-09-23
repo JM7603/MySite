@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-DN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>中式浪漫</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/keyframe.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+  <div class="MainTopBG"></div>
+
+  <div class="title">
+    <div class="arrows-body-left">
+      <div class="arrows"></div>
+      <div class="arrows"></div>
+      <div class="arrows"></div>
+    </div>
+    <span>中式恐怖</span>
+    <div class="arrows-body-right">
+      <div class="arrows"></div>
+      <div class="arrows"></div>
+      <div class="arrows"></div>
+    </div>
+  </div>
+
+  <div class="boxMain">
+    <div class="box box1"></div>
+
+    <div class="box box2"></div>
+
+    <div class="box box3"></div>
+  </div>
+
+  <div class="boxMain">
+    <div class="box box4"></div>
+
+    <div class="box box5"></div>
+
+    <div class="box box6"></div>
+  </div>
+
+  <div class="boxMain">
+    <div class="box box7"></div>
+
+    <div class="box box8"></div>
+
+    <div class="box box9"></div>
+  </div>
+
+  <script>
+    window.onscroll = function () {
+      myFunction()
+    };
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+  </script>
+
+</body>
+
+</html>
